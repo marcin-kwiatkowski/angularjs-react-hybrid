@@ -124,6 +124,14 @@ module.exports = function makeWebpackConfig() {
       // Allow loading html through js
       test: /\.html$/,
       loader: 'raw-loader'
+    }, {
+      test: /\.jsx$/,
+      use: [{
+        loader: 'babel-loader',
+        options: {
+          presets: ["env", "react", "stage-2"]
+        }
+      }]
     }]
   };
 
