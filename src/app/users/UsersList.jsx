@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
+import './UsersList.scss'
 
 class UsersList extends Component {
   render() {
     return (
-      <div>
+      <div className="users-list">
         USERS LIST
       </div>
     )
