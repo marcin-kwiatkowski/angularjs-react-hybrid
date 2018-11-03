@@ -19,6 +19,6 @@ module.directive('app', () => {
 module.controller('UsersCtrl', UsersCtrl)
 
 // Set up React component as Angular's component using react2angular.
-module.component('usersList', react2angular(UsersList))
+module.component('usersList', react2angular(UsersList, [], ['$http']))
 
 export default MODULE_NAME
